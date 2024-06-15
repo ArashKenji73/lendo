@@ -1,0 +1,57 @@
+.bt-menu.bt-menu-open {
+  height: 100%;
+}
+
+.bt-menu-trigger {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.bt-menu-trigger span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: -2px;
+  background-color: #000;
+  font-size: 0px;
+  transition: background-color 0.6s;
+}
+
+.bt-menu-open .bt-menu-trigger span {
+  background-color: transparent;
+}
+
+.bt-menu-trigger span:before,
+.bt-menu-trigger span:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  content: "";
+  transition: transform 0.6s;
+}
+
+.bt-menu-trigger span:before {
+  transform: translateY(-250%);
+}
+
+.bt-menu-trigger span:after {
+  transform: translateY(250%);
+}
+
+.bt-menu-open .bt-menu-trigger span:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.bt-menu-open .bt-menu-trigger span:after {
+  transform: translateY(0) rotate(-45deg);
+}

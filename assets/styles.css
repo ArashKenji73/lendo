@@ -1,0 +1,500 @@
+@font-face {
+  src: url(./fonts/IRANSans/Digi\ Hamishe\ Bold.ttf);
+  font-family: IRANSans;
+}
+
+@font-face {
+  src: url(./fonts/IRANSans/IRANSans\(FaNum\)_Black.ttf);
+  font-family: Fedra;
+}
+
+* {
+  direction: rtl;
+  /* font-family: Fedra; */
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  text-align: right;
+  text-decoration: none;
+}
+
+body {
+  font-family: IRANSans;
+}
+
+a {
+  color: #0b2c6e;
+}
+
+.container {
+  padding: 0px 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.item-center {
+  align-items: center;
+}
+.w-full {
+  width: 100%;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.width-half {
+  width: 50%;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 64px;
+  height: 48px;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  font-family: IRANSans;
+}
+
+.btn-default {
+  border: 1px solid;
+  border-color: rgb(11, 44, 110);
+  color: rgb(11, 44, 110);
+}
+
+.btn-primary {
+  box-shadow: 0px 1px 5px rgba(100, 116, 139, 0.12);
+  box-sizing: content-box;
+  /* width: 238px; */
+  height: 32px;
+  padding: 0.5rem 1.5rem;
+  background-color: #0ac974;
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  width: 212px;
+  background: #13274f;
+  height: 42px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 52px;
+}
+header {
+  box-shadow: 0px 1px 5px rgba(100, 116, 139, 0.12);
+  position: sticky;
+  top: 0px;
+  height: 80px;
+  background: #fff;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 4rem;
+}
+
+nav {
+  position: absolute;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f3f3;
+  width: 100%;
+  right: -100%;
+  padding-bottom: 1rem;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.nav-active {
+  right: 0%;
+}
+.navlink {
+  padding: 1rem 1.5rem;
+}
+.login-sign {
+  /* margin-right: auto; */
+}
+.slider {
+  width: 100%;
+  /* padding: 4rem; */
+  padding: 2rem;
+  background: linear-gradient(275.17deg, #12563d 0%, #0c9e5d 100%);
+  font-family: Fedra;
+}
+.slider-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider-text {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.89;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.slider-img {
+  /* width: 780px; */
+  width: 100%;
+}
+.upv {
+  width: 100%;
+  /* height: 120px; */
+  /* margin-top: 6rem; */
+  margin-top: 2rem;
+  background-color: #2f805f;
+  border-radius: 1.5rem;
+  font-weight: 900;
+  color: #fff;
+  padding: 1rem 0px;
+}
+
+.upv > .container {
+  height: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.get-loan {
+  padding: 5rem 0px;
+  color: #23417d;
+}
+
+.loan-title {
+  line-height: 1.14;
+  font-size: 1.75rem;
+  font-family: Fedra;
+}
+.loan-subtitle {
+  font-family: Fedra;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+.get-loan .content {
+  font-size: 0.875rem;
+  line-height: 2.3;
+  color: #23417d;
+  font-family: IRANSans;
+}
+.get-loan-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.get-loan img {
+  width: 100%;
+  margin-top: 2rem;
+}
+.tabs {
+  background: #f5f6f9;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  border-radius: 0.8rem;
+  gap: 0.5rem;
+  margin: 2.5rem 0px;
+  justify-content: start;
+}
+.tab {
+  font-family: IRANSans;
+  padding: 1px 0.8rem;
+  font-size: 0.875rem;
+  color: #6d80a8;
+}
+.tab-active {
+  background-color: #ffffff;
+  color: #23417d;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+.radio {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radio .radio-title {
+  margin-right: 2rem;
+}
+/* Hide the browser's default radio button */
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkmark:after {
+  top: 9px;
+  right: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.paper-work {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 180px; */
+  background: #d4f4e1;
+  /* padding-right: 64px;
+  padding-left: 64px; */
+  padding: 1rem 2rem;
+  border-radius: 48px;
+  /* margin-top: 2rem; */
+}
+.paper-work .flex {
+  /* padding: 0px 4rem; */
+  flex-direction: column-reverse;
+}
+
+.paper-work img {
+  display: none;
+}
+.paper-work-title {
+  font-family: Fedra;
+  color: #13274f;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 89px;
+}
+.services {
+  margin: 4rem 0px;
+}
+.details-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.services-flex {
+  display: flex;
+  flex-direction: column;
+}
+.services-title {
+  font-family: Fedra;
+  color: #23417d;
+  font-size: 1.75rem;
+}
+.services-content {
+  font-size: 0.875rem;
+  line-height: 2.3;
+  color: #23417d;
+  font-family: IRANSans;
+}
+
+.services img {
+  width: 100%;
+}
+.faq-flex {
+  display: flex;
+  flex-direction: column;
+}
+.faq-title {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.89;
+  color: #13274f;
+  font-family: Fedra;
+  margin-bottom: 1rem;
+}
+.faq-img {
+  width: 100%;
+}
+.faq-questions {
+  gap: 1rem;
+}
+.question {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-radius: 16px;
+  background: #f5f6f9;
+  padding: 0px 1rem;
+}
+
+@media (min-width: 1536px) {
+  .btn-primary {
+    width: 238px;
+  }
+  .container {
+    width: 1280px;
+    padding: 0px 0px;
+    margin: 0px auto;
+  }
+
+  nav {
+    position: relative;
+    top: initial;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0px;
+    background: none;
+    right: initial;
+  }
+  .logo-nav {
+    width: 100%;
+  }
+  .bt-menu {
+    display: none;
+  }
+  .login-sign {
+    margin-right: auto;
+  }
+  .slider {
+    padding: 4rem;
+  }
+  .slider-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .slider-text {
+    width: 450px;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.89;
+    color: #fff;
+    text-align: right;
+  }
+
+  .slider-img {
+    width: 780px;
+  }
+  .right-side {
+    width: 486px;
+  }
+  .get-loan-flex {
+    flex-direction: row;
+  }
+  .get-loan img {
+    width: 438px;
+  }
+  .upv {
+    margin-top: 6rem;
+    height: 120px;
+  }
+
+  .upv > .container {
+    flex-direction: row;
+    gap: 0px;
+  }
+
+  .tabs {
+    height: 40px;
+    background: #f5f6f9;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    border-radius: 0.8rem;
+    gap: 0.5rem;
+    margin: 2.5rem 0px;
+  }
+
+  .paper-work {
+    height: 180px;
+    padding-right: 64px;
+    padding-left: 64px;
+    margin-top: 2rem;
+  }
+  .paper-work .flex {
+    flex-direction: row;
+  }
+  .paper-work img {
+    display: initial;
+  }
+  .services-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .services .details-flex {
+    justify-content: center;
+  }
+  .services img {
+    width: 600px;
+  }
+
+  .faq-flex {
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .faq-img {
+    width: 460px;
+    height: 312px;
+  }
+}
